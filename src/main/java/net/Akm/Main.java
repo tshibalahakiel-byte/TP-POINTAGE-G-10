@@ -61,6 +61,22 @@ class ControlePiece {
         return false;
     }
 }
+// ================= création d'une nouvelle classe "PIECES IDENTIFIANT=================
+class PieceIdentifiant {
+    private static String identifiant;
+
+    public PieceIdentifiant(String identifiant) {
+        PieceIdentifiant.identifiant = identifiant;
+    }
+
+    static String getIdentifiant() {
+        return identifiant;
+    }
+
+    static void setIdentifiant(String identifiant) {
+        PieceIdentifiant.identifiant = identifiant;
+    }
+}
 
 // ================= MAIN =================
 public class Main {
