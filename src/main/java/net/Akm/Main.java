@@ -112,6 +112,43 @@ public class Configuration {
     }
 }
 
+ * Classe utilitaire simple pour la journalisation
+ * Groupe 10 - abigael - Module Contrôle Pièces
+ */
+public class Logger {
+    
+    /**
+     * Affiche un message d'information avec timestamp
+     * @param message Message à logger
+     */
+    public static void info(String message) {
+        System.out.println("[INFO] " + message);
+    }
+    
+    /**
+     * Affiche un message d'avertissement
+     * @param message Message d'avertissement
+     */
+    public static void warn(String message) {
+        System.out.println("[ATTENTION] " + message);
+    }
+    
+    /**
+     * Affiche un message d'erreur
+     * @param message Message d'erreur
+     */
+    public static void error(String message) {
+        System.out.println("[ERREUR] " + message);
+    }
+    
+    /**
+     * Affiche un message de succès
+     * @param message Message de succès
+     */
+    public static void success(String message) {
+        System.out.println("[SUCCÈS] " + message);
+    }
+}
 public
 // ================= MAIN =================
 public class Main {
