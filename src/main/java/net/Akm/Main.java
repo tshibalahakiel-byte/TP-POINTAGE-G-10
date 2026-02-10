@@ -61,24 +61,41 @@ class ControlePiece {
         return false;
     }
 }
-// damaris Kazadi catalogue class
-public class  cataloguePiece {
-    private static String codeCatalogue;
-
-    public cataloguePiece(String codeCatalogue)
-    {
+//sonyi kaji jael
+ class  PieceStatut{
+    private static StatutPiece statut;
+    public PieceStatut(StatutPiece statut){
+        PieceStatut.statut=statut;
 
     }
 
-    public static String getCodeCatalogue()
-    {
+
+    public static StatutPiece getStatut() {
+        return statut;
+    }
+
+    public static void setStatut(StatutPiece statut) {
+        PieceStatut.statut = statut;
+    }
+}
+// damaris Kazadi catalogue class
+ class  cataloguePiece {
+    private static String codeCatalogue;
+
+    public cataloguePiece(String codeCatalogue) {
+
+    }
+
+
+    public static String getCodeCatalogue() {
         return codeCatalogue;
     }
 
-    public static void setCodeCatalogue(String codeCatalogue)
-    {
+    public static void setCodeCatalogue(String codeCatalogue) {
         cataloguePiece.codeCatalogue = codeCatalogue;
     }
+}
+public
 // ================= MAIN =================
 public class Main {
     public static void main(String[] args) {
