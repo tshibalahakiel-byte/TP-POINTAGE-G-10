@@ -100,74 +100,18 @@ class ControlePiece {
         cataloguePiece.codeCatalogue = codeCatalogue;
     }
 }
-
-package org.example;
-
-/**
- * Classe contenant des informations supplémentaires sur une pièce
- * Groupe 10 - Abigael
- */
-public class InformationPiece {
+public class Configuration {
     
-    private String codePiece;
-    private String description;
-    private double poids;
-    private String couleur;
+    public static final String NOM_PROJET = "TP Pointage Production";
+    public static final String VERSION = "1.0";
+    public static final String GROUPE = "Groupe 10";
     
-    /**
-     * Constructeur par défaut
-     */
-    public InformationPiece() {
-        this.codePiece = "";
-        this.description = "";
-        this.poids = 0.0;
-        this.couleur = "";
-    }
-    
-    /**
-     * Constructeur avec paramètres
-     */
-    public InformationPiece(String codePiece, String description, double poids, String couleur) {
-        this.codePiece = codePiece;
-        this.description = description;
-        this.poids = poids;
-        this.couleur = couleur;
-    }
-    
-    // ========== GETTERS ==========
-    public String getCodePiece() {
-        return codePiece;
-    }
-    
-    public String getDescription() {
-        return description;
-    }
-    
-    public double getPoids() {
-        return poids;
-    }
-    
-    public String getCouleur() {
-        return couleur;
-    }
-    
-    // ========== SETTERS ==========
-    public void setCodePiece(String codePiece) {
-        this.codePiece = codePiece;
-    }
-    
-    public void setDescription(String description) {
-        this.description = description;
-    }
-    
-    public void setPoids(double poids) {
-        this.poids = poids;
-    }
-    
-    public void setCouleur(String couleur) {
-        this.couleur = couleur;
+    // Constructeur privé pour éviter l'instanciation
+    private Configuration() {
+        // Classe utilitaire
     }
 }
+
 public
 // ================= MAIN =================
 public class Main {
