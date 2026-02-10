@@ -61,7 +61,24 @@ class ControlePiece {
         return false;
     }
 }
+// damaris Kazadi catalogue class
+public class  cataloguePiece {
+    private static String codeCatalogue;
 
+    public cataloguePiece(String codeCatalogue)
+    {
+
+    }
+
+    public static String getCodeCatalogue()
+    {
+        return codeCatalogue;
+    }
+
+    public static void setCodeCatalogue(String codeCatalogue)
+    {
+        cataloguePiece.codeCatalogue = codeCatalogue;
+    }
 // ================= MAIN =================
 public class Main {
     public static void main(String[] args) {
