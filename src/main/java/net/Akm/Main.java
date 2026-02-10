@@ -1,5 +1,5 @@
-package org.example;
-
+package net.Akm;
+enum StatutPiece{}
 public class Piece {
     private String idPiece;
     private String nomPiece;
@@ -133,6 +133,17 @@ public class Configuration {
     }
 }
 
+//tshimbuwa kalala melina
+public  class validationPieces {
+    static boolean valider(String id)
+    {
+        return  id!= null && id.isEmpty();
+    }
+        }
+
+/**
+ * Classe contenant des informations supplémentaires sur une pièce
+ * Groupe 10 - Abigael
  * Classe utilitaire simple pour la journalisation
  * Groupe 10 - abigael - Module Contrôle Pièces
  */
