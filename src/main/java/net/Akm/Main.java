@@ -121,6 +121,17 @@ public class  cataloguePiece {
         cataloguePiece.codeCatalogue = codeCatalogue;
     }
 }
+public class Configuration {
+    
+    public static final String NOM_PROJET = "TP Pointage Production";
+    public static final String VERSION = "1.0";
+    public static final String GROUPE = "Groupe 10";
+    
+    // Constructeur privé pour éviter l'instanciation
+    private Configuration() {
+        // Classe utilitaire
+    }
+}
 
 //tshimbuwa kalala melina
 public  class validationPieces {
@@ -133,66 +144,41 @@ public  class validationPieces {
 /**
  * Classe contenant des informations supplémentaires sur une pièce
  * Groupe 10 - Abigael
+ * Classe utilitaire simple pour la journalisation
+ * Groupe 10 - abigael - Module Contrôle Pièces
  */
-public class InformationPiece {
-    
-    private String codePiece;
-    private String description;
-    private double poids;
-    private String couleur;
+public class Logger {
     
     /**
-     * Constructeur par défaut
+     * Affiche un message d'information avec timestamp
+     * @param message Message à logger
      */
-    public InformationPiece() {
-        this.codePiece = "";
-        this.description = "";
-        this.poids = 0.0;
-        this.couleur = "";
+    public static void info(String message) {
+        System.out.println("[INFO] " + message);
     }
     
     /**
-     * Constructeur avec paramètres
+     * Affiche un message d'avertissement
+     * @param message Message d'avertissement
      */
-    public InformationPiece(String codePiece, String description, double poids, String couleur) {
-        this.codePiece = codePiece;
-        this.description = description;
-        this.poids = poids;
-        this.couleur = couleur;
+    public static void warn(String message) {
+        System.out.println("[ATTENTION] " + message);
     }
     
-    // ========== GETTERS ==========
-    public String getCodePiece() {
-        return codePiece;
+    /**
+     * Affiche un message d'erreur
+     * @param message Message d'erreur
+     */
+    public static void error(String message) {
+        System.out.println("[ERREUR] " + message);
     }
     
-    public String getDescription() {
-        return description;
-    }
-    
-    public double getPoids() {
-        return poids;
-    }
-    
-    public String getCouleur() {
-        return couleur;
-    }
-    
-    // ========== SETTERS ==========
-    public void setCodePiece(String codePiece) {
-        this.codePiece = codePiece;
-    }
-    
-    public void setDescription(String description) {
-        this.description = description;
-    }
-    
-    public void setPoids(double poids) {
-        this.poids = poids;
-    }
-    
-    public void setCouleur(String couleur) {
-        this.couleur = couleur;
+    /**
+     * Affiche un message de succès
+     * @param message Message de succès
+     */
+    public static void success(String message) {
+        System.out.println("[SUCCÈS] " + message);
     }
 }
 public
