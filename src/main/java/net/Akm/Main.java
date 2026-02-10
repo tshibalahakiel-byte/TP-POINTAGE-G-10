@@ -66,15 +66,36 @@ class ControlePiece {
         return false;
     }
 }
+// ================= "PIECES IDENTIFIANT"=================
+class PieceIdentifiant {
+    private static String identifiant;
+
+    public PieceIdentifiant(String identifiant) {
+        PieceIdentifiant.identifiant = identifiant;
+    }
+
+    public static String getIdentifiant() {
+        return identifiant;
+    }
+
+    public static void setIdentifiant(String identifiant) {
+        PieceIdentifiant.identifiant = identifiant;
+    }
+
+    // ================= MAIN =================
+// damaris Kazadi catalogue class
+public class  cataloguePiece {
+    private static String codeCatalogue;
+
+    public cataloguePiece(String codeCatalogue)
+    {
 //sonyi kaji jael
  class  PieceStatut{
     private static StatutPiece statut;
     public PieceStatut(StatutPiece statut){
         PieceStatut.statut=statut;
-
     }
-
-
+    
     public static StatutPiece getStatut() {
         return statut;
     }
