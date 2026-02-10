@@ -61,7 +61,7 @@ class ControlePiece {
         return false;
     }
 }
-// ================= création d'une nouvelle classe "PIECES IDENTIFIANT=================
+// ================= tonny kabange je fais une création d'une nouvelle classe "PIECES IDENTIFIANT=================
 class PieceIdentifiant {
     private static String identifiant;
 
@@ -69,16 +69,15 @@ class PieceIdentifiant {
         PieceIdentifiant.identifiant = identifiant;
     }
 
-    static String getIdentifiant() {
+    public static String getIdentifiant() {
         return identifiant;
     }
 
-    static void setIdentifiant(String identifiant) {
+    public static void setIdentifiant(String identifiant) {
         PieceIdentifiant.identifiant = identifiant;
     }
-}
 
-// ================= MAIN =================
+    // ================= MAIN =================
 public class Main {
     public static void main(String[] args) {
 
